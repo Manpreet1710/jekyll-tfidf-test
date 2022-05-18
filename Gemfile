@@ -4,13 +4,14 @@ gem "appscms-tools-theme","~> 1.9.1"
 
 gem "kramdown-parser-gfm"
 
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-sitemap"
   gem "jekyll-include-cache"
   gem 'jekyll-paginate'
-  gem  'jekyll-tfidf-related-posts'
+  gem 'jekyll-tfidf-related-posts'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

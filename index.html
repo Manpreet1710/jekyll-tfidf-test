@@ -3,10 +3,18 @@ layout: home
 title: Jekyll tfidf test
 ---
 
-<h1>Manpreet singh {{site.related_posts}}</h1>
-
+<h1>Manpreet singh {{site.related_posts_count}}</h1>
 
 {% for post in site.related_posts %}
-{{post}}
 {% include related-post.html %}
 {% endfor %}
+
+<div class="nav-link post-related">
+    <div class="nav-meta">You might also like</div>
+    <ul>
+        {% assign posts = site.posts | where_exp:"post", "post.url != page.url" | sample:8 %}
+        {% for post in posts %}
+        {% include related-post.html %}
+        {% endfor %}
+    </ul>
+</div>

@@ -2,7 +2,6 @@
 tags: []
 categories:
 - Scrabble
-- history
 layout: post
 title: History of Scrabble
 image: "/uploads/history-of-scrabble.png"

@@ -1,7 +1,8 @@
 ---
 author: Nikita
 tags: []
-categories: []
+categories: 
+- Scrabble
 comments: true
 layout: post
 title: How to become a pro at wordle? Best collection of tips and resources!
