@@ -1,11 +1,12 @@
 ---
 layout: home
-title: Wordwithletters Blog
+title: Jekyll tfidf test
 ---
 
-<h1>Manpreet singh {{site.related_posts_count}}</h1>
+<h1>Manpreet singh {{site.related_posts}}</h1>
 
 
 {% for post in site.related_posts %}
+{{post}}
 {% include related-post.html %}
 {% endfor %}
