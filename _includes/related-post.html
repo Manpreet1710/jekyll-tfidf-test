@@ -1,9 +1,32 @@
-<li>
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <div class="post">
-            <div class="post-related-title">{{ post.title }}</div>
-            <p class="post-summary">{{post.content | markdownify | strip_html | truncatewords:30}}
-            <p>
+<div class="col-lg-4 col-md-6 mb-4 card-group">
+    <div class="card h-100">
+        <a href="{{ post.url }}">
+            <img src="{{ post.image }}" loading="lazy" class="card-img-top" height="auto" width="100%"
+                alt="{{post.title}}" {%- if site.crossorigin -%} crossorigin {%- endif -%}>
+        </a>
+        <div class="card-body">
+            <a class="text-decoration-none text-dark" href="{{ post.url }}" class="anchor_link">
+                <h4 class="card-title mb-4 text-left">{{ post.title }}</h4>
+            </a>
         </div>
-    </a>
-</li>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                {% if post.author %}
+                <span class="meta-footer-thumb">
+                    <img class="author-thumb" loading="lazy" src="{{ image }}" alt="{{ authorName }}" {%- if
+                        site.crossorigin -%} crossorigin {%- endif -%}>
+                </span>
+                {% endif %}
+
+                <span class="author-meta">
+                    <span class="post-name">
+                        <a target="_blank" href="/blog">{{authorName}}</a>
+                    </span><br>
+                    <span class="post-date">{{post.date | date_to_string }}</span>
+                </span>
+                <span class="post-read-more"><a class="text-dark" href="{{ post.url }}" title="Read Story">Read
+                        More</a></span>
+            </div>
+        </div>
+    </div>
+</div>

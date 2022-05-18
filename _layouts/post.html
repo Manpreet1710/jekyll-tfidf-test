@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include custom-head.html %}
+
+<style>
+    p {
+        margin-bottom: 3rem;
+    }
+
+    .mainThings {
+        padding-left: 40px;
+        position: sticky;
+        top: 80px;
+    }
+
+    .theseFeatures .featureLink:hover {
+        text-decoration: underline !important;
+    }
+
+
+    @media (max-width:768px) {
+        .theseFeatures {
+            text-align: center !important;
+            padding-left: 0;
+            position: static;
+            top: auto;
+        }
+
+    }
+</style>
+
+<body>
+    {%- include header/blogHeader.html -%}
+    <section class="section_post">
+        <div class="container">
+            <div class="row section-title-wrap">
+                <div class="col-md-8 mx-auto mt-5">
+                    <h1 class="display-4" style="font-weight: 900;">{{ title }}</h1>
+                </div>
+            </div>
+            <div class="row mt-5 mx-auto">
+                <div class="col-md-8 mx-auto">
+                    {%- include authors/authors.html -%}
+                    {%- include postauthorbio.html -%}
+                    {% if page.author %}
+                    {%- include author_bio.html -%}
+                    {% endif %}
+                    <div class="post-content">
+                        {{ content }}
+                    </div>
+
+                    {%- include paginationPostPage.html -%}
+                </div>
+                <div class="col-md-12">
+                    <section class="related-posts-section">
+                        <div class="container">
+                            <div class="relatedPosts">
+                                <h2 class="pt-5 pb-0 related_post_heading">You might also like</h2>
+                                <div class="row">
+                                    {% for post in site.related_posts %}
+                                    {% include related-post.html %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include script.html %}
+</body>
+
+</html>

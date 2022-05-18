@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="/assets/images/wordswithletters-logo.png" />
+  <link rel="canonical" href="http://localhost:4000/blog/5-letter-words-with-no-repeating-letters-top-scoring-5-letter-words" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="Scrabble,Unscrabbler, Words with letters" />
+  <meta name="description" content="List down the high scoring 5 letter words that have no repeating letters. Where do we find these words. Explain some tools and their features. Where we com" />
+  <meta name="og:description" content="List down the high scoring 5 letter words that have no repeating letters. Where do we find these words. Explain some tools and their features. Where we com" />
+  <meta property="og:title" content="5 Letter Words With No Repeating Letters- Top Scoring 5 Letter Words" />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="wordswithletters" />
+  <meta property="og:url" content="http://localhost:4000/blog/5-letter-words-with-no-repeating-letters-top-scoring-5-letter-words" />
+  <meta name="author" content="Harshit Raghav" />
+  <title>5 Letter Words With No Repeating Letters- Top Scoring 5 Letter Words</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"/>
+  
+
+  <link rel="stylesheet" href="/assets/css/blog.css"/>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-225358821-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-225358821-2');
+</script>
+
+
+</head>
+
+<style>
+    p {
+        margin-bottom: 3rem;
+    }
+
+    .mainThings {
+        padding-left: 40px;
+        position: sticky;
+        top: 80px;
+    }
+
+    .theseFeatures .featureLink:hover {
+        text-decoration: underline !important;
+    }
+
+
+    @media (max-width:768px) {
+        .theseFeatures {
+            text-align: center !important;
+            padding-left: 0;
+            position: static;
+            top: auto;
+        }
+
+    }
+</style>
+
+<body><header id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light py-3">
+        <a class="navbar-brand" href="/" title=""></a>
+
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <i class="fas fa-bars fa-2x" style="color:#000"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+            </ul>
+        </div>
+    </nav>
+</header><section class="section_post">
+        <div class="container">
+            <div class="row section-title-wrap">
+                <div class="col-md-8 mx-auto mt-5">
+                    <h1 class="display-4" style="font-weight: 900;">5 Letter Words With No Repeating Letters- Top Scoring 5 Letter Words</h1>
+                </div>
+            </div>
+            <div class="row mt-5 mx-auto">
+                <div class="col-md-8 mx-auto">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="wrapfooter">
+    <span class="author_image">
+        <img class="author-thumb" loading="lazy" src="/assets/images/siddhika.jpeg" height="35px" width="35px" alt="Siddhika Prajapati"
+            id="author_img">
+    </span>
+    <span class="author-meta">
+        <span class="post-name">
+            <a class="postName" target="_blank" href="N/A">Siddhika Prajapati</a></span><br>
+        <span class="author_bio">Siddhika Prajapati is an English Honors graduate
+and postgraduate in journalism. A freelance writer and a nutritionist, she is a fashion, fitness, art, tech, culture and
+travel writer, who loves to explore and experiment through words with an add-on of personal touch. Her enthusiasm for
+fashion, lifestyle, tech and fitness is what prompts her to write regularly.</span>
+    </span>
+</div>
+                    <div class="post-content">
+                        <p>List down the high scoring 5 letter words that have no repeating letters. Where do we find these words. Explain some tools and their features.</p>
+
+<p>Where we come up with these words. A unique way to solve a word intrigued me. The idea is to select 5 words with separate letters so that you will be left with 25 characters. A set of words is suggested (all of the words are valid English words):</p>
+
+<ul>
+  <li>brick</li>
+  <li>glent</li>
+  <li>jumpy</li>
+  <li>vozhd</li>
+  <li>waqfs</li>
+</ul>
+
+<p>The first thought I had was:</p>
+
+<ul>
+  <li>Begin with the first word.</li>
+  <li>Minimize overlapping words in the word list.</li>
+  <li>Select the remaining word from the word list.</li>
+  <li>Repeat this word.</li>
+</ul>
+
+<p>But it doesn’t really work unless you have a set of five separate words in order.</p>
+
+<p><img src="/uploads/283.PNG" alt="But it doesn't really work unless you have a set of five separate words in order." title="words and more words" /></p>
+
+<p>For the following list:</p>
+
+<ul>
+  <li>brick</li>
+  <li>feast</li>
+  <li>glent</li>
+  <li>jumpy</li>
+  <li>vozhd</li>
+  <li>waqfs</li>
+</ul>
+
+<p>I will end up with: [brick, feast, jumpy, vozhd] because feast comes before gland and will filter it out, but in the end, glent would have been the better pick.</p>
+
+<p>I have not been able to find algorithms for this particular problem, so I wondered if there is an existing algorithm that can be applied to them.</p>
+
+<p>Were you aware that there is a term for words without repetitive letters? A heterogram is a word, sentence or sentence in which no letter of the alphabet appears more than once (from straight-, meaning “different”, + -gram, denoting “written”). The words isogram and non-pattern are also terms that have been used to describe the same thing. Therefore, fundamentally, a heterogram is a word with all single letters. How cool is it?</p>
+
+<p>Here are a few words of 5 letters without repetitive letters to help you prepare for your next pun. So, without further delay, let’s get into the answers to the most frequently asked questions about this, which will help you win (or perhaps cheat in) your next game. Is?</p>
+
+<h2 id="what-are-some-of-the-famous-5-letter-words-without-repetitive-letters"><strong>What are some of the famous 5-letter words without repetitive letters?</strong></h2>
+
+<p>Some commonly used 5 lettered words with no repeating letters are-</p>
+
+<p><img src="/uploads/21552.PNG" alt="What are some of the famous 5-letter words without repetitive letters?" title=" famous 5-letter words without repetitive letters?" /></p>
+
+<p>light, might, white, flake, poise, noise, voice, vocal, abode, chase, cabin, right, focal, focus, train, waste, eight, yacht, adopt, crate, sedan, paste, paint, faint, whale, quail, image, zebra, brave, crave, dream, steam, stare, flare, great, shale, frail, grail, night, sight, fight, chain, break, brake, trace, satin, haste, urban, eland, extra, hover, cover, lover.</p>
+
+<h2 id="name-a-few-high-scoring-5-letter-words-with-no-repeating-letters-in-scrabble"><strong>Name a few high scoring 5 letter words with no repeating letters in Scrabble?</strong></h2>
+
+<p>Name some words of 5 high score letters without repeating the letters at Scrabble? It can seem challenging to do five-letter words without recurring characters. Numerous frequent words of five letters do not repeat the letters, which may surprise you.</p>
+
+<p>cozey19, crazy19, zaxes21, zinky21, nudzh18, nizam16, etc., are some of the 5-letter highest scoring words in Scrabble.</p>
+
+<h2 id="are-there-5-letter-words-with-just-single-letters-with-all-vowels-in-alphabetical-order"><strong>Are there 5-letter words with just single letters with all vowels in alphabetical order?</strong></h2>
+
+<p>There are no five-letter words without repetitive letters having all vowels in alphabetical order.</p>
+
+<p>What are a few words of 5 letters without repeating the letters which begin with A?</p>
+
+<p>Some 5 letter words with no repeating letters starting with A are acted, azuki, Azoic, after, amigo, adept, among, admit, adopt, alcid, alive, ageism, aloft, aunty, about, abode, antic, anime, amuse, adore, aside, adios, amigo, anode, audit, adult, alone, alter.</p>
+
+<p>Can you write five powerful words without using the vowels “a”, “e”, “i”, “o”, and “u”?</p>
+
+<p>Vowels are significant, but there are tons of words that can be written without any of them:</p>
+
+<ol>
+  <li>Sky</li>
+  <li>Lynx</li>
+  <li>Hymn</li>
+  <li>Sphynx</li>
+  <li>Rhythm</li>
+  <li>Dry</li>
+  <li>Try</li>
+  <li>Cyst</li>
+  <li>Crypt</li>
+  <li>Tryst</li>
+</ol>
+
+<p>Of course, you can write words without using vowels. Words like a fly, cry, fry, by, hymn, gym(though short form), psych, lynch, crypt and many more. But if you look at those words above, you’ll see the letter has something in common.</p>
+
+<p>In English, “y” contains both vowel and consonant properties. Therefore, it depends on the word if one considers it a vowel or consonant. For the above words, it is considered a vowel, and accordingly, we can write words.</p>
+
+<h2 id="what-are-the-the-most-scoring-five-letter-words"><strong>WHAT ARE THE THE MOST SCORING FIVE-LETTER WORDS</strong></h2>
+
+<p>Just thinking about some words you use every day during your life can give you good options.</p>
+
+<p><strong>Other -</strong> Other distinguishes objects from persons.</p>
+
+<p><strong>About -</strong> Talking about approximate size, you might say that the fish that escaped was about two feet long.</p>
+
+<p><img src="/uploads/20144.PNG" alt="WHAT ARE THE THE MOST SCORING FIVE-LETTER WORDS" title="SCORING FIVE-LETTER WORDS" /></p>
+
+<p><strong>Their</strong> - If this is their business, they are certainly not yours.</p>
+
+<p><strong>Every</strong> - Like the word all, every encompasses the totality of what you’re discussing.</p>
+
+<p><strong>Faith</strong> - it means something different to everybody, but it is indeed supposed to be a positive word.</p>
+
+<p><strong>Lunch:</strong> Whether you choose to eat or not, you are likely entitled to a lunch break at work.</p>
+
+<p>Maybe - it’s a big word to use when you don’t want to put yourself into an engagement.</p>
+
+<p>For example, if you have the letters T W L or O C T W L in your rack, you could form words such as CLOWN, CLOTH, COLTS, OWLET, SCOWL, or TOWEL provided you have the other letters available for use.</p>
+
+<h4 id="how-many-five-letter-words-do-you-have"><strong>How many five-letter words do you have?</strong></h4>
+
+<p>The answer is based on the dictionary. The Free Dictionary states that there are 158,390 words with five letters. Volume 6 of the Office’s Scrabble Dictionary claims there are 8,996 available words with five letters, while other sources claim that there are only 5,350 words that you can create with five letters in word games.</p>
+
+<h4 id="what-are-the-five-letter-words-beginning-with-s"><strong>What are the five-letter words beginning with S?</strong></h4>
+
+<ul>
+  <li>The letter S is essential in making two words at once by placing the S at the end of an existing word while using the S somewhere in your new word. The simplest way is to use the S at the start of the new word:</li>
+  <li>Seize</li>
+  <li>Serve</li>
+  <li>Sharp</li>
+  <li>Shelf</li>
+  <li>Shine</li>
+  <li>Slice</li>
+  <li>Solid</li>
+  <li>Space</li>
+  <li>Stand</li>
+  <li>Stone</li>
+</ul>
+
+<h4 id="what-are-some-5-letter-words-starting-with-e"><strong>What are some 5 letter words starting with E?</strong></h4>
+
+<ul>
+  <li>Eager</li>
+  <li>Earth</li>
+  <li>Ebony</li>
+  <li>Edict</li>
+  <li>Eight</li>
+  <li>Elect</li>
+  <li>Elite</li>
+  <li>Entry</li>
+  <li>Every</li>
+</ul>
+
+<h2 id="tools-to-find-5-letter-words-with-no-repeating-letters--top-scoring-5-letter-word"><strong>Tools To Find 5 Letter Words With No Repeating Letters- Top Scoring 5 Letter Word</strong></h2>
+
+<h2 id="word-finder"><strong>Word Finder</strong></h2>
+
+<p>Are you a person who enjoys finding and discovering new words? Are you passionate about board games? If you are, then that search for words is a tool you can’t afford to have. Whether you are in Scrabble, words with friends or any other word game, Word Finder will prove helpful. It will help you both word discovery, and as a reference tool, you and your playmates can use it as a way to settle disputes about the validity of any particular word.</p>
+
+<p>Want to boost your vocabulary? Do puns help to ignite brain cells? Do you enjoy the thrill of trying to outsmart an opponent with your encyclopedia mind? Therefore, their word generator is a tool you cannot do without!</p>
+
+<p>Compared to the range of online word generators, word finders and word solvers, Word Finder is among the most intuitive and straightforward to use. As you learn more about how using Word Finder can assist you in improving your language skills, spelling words correctly, and coming up with new words from a jumble of letters, you’ll wonder how you ever managed without it.</p>
+
+<h2 id="word-scramble-finder"><strong>Word Scramble Finder</strong></h2>
+
+<p>Word Solver is a valuable tool to help players win an advantage at puzzle games like Scrabble, Words With Friends, and daily crosswords. Just enter the available letters, length and motif, then Word Finder will find a selection of results that match your criteria.</p>
+
+<h3 id="what-is-a-word-scramble-finder"><strong>What is a Word Scramble Finder?</strong></h3>
+
+<p>A word scrambler does exactly as you think - it helps you find words! Maybe you’re trying to make your vocabulary better? Or perhaps you need help clearing out certain letters when you’re playing a pun? For any reason, please enter the letters at your disposal, and our free tool will give you all possible word combinations in an instant.</p>
+
+<h2 id="words-with-letters-tool-its-everything-you-need-to-earn"><strong>Words with Letters Tool: It’s everything you need to earn.</strong></h2>
+
+<p>Do you enjoy playing wordplay? Are games like Scrabble and Words with Friends igniting all your neurons? Do you like to experience new meanings? So their letter form is exactly what you need. Whatever your level of competence, from time to time, we get stuck. They will be perplexed about how we will construct words from those letters. That’s when this tool works like a rescue. They will familiarize themselves with terms of variable length which begin with various letters as your vocabulary expands.</p>
+
+<p>The Words with letters tool works best for the most challenging words too. A long list of valid words is given. Enter the letters you want to do words with and get the desired result quickly. This tool is totally complimentary and very easy to use. This tool has an advanced option, and you can use it to obtain high rating words.</p>
+
+                    </div><div class="post-links">
+    <div class="bottompagination">
+        <div class="pointerup"><i class="fa fa-caret-up"></i></div>
+        <span class="navigation" role="navigation">
+            <div class="pagination">
+                
+                <a class="ml-1 mr-1 pageUrl" href="/blog/5-letter-words-tips-and-tricks-of-scoring-high-in-word-games">« Prev</a>
+                
+                
+                <a class="ml-1 mr-1 pageUrl" href="/blog/most-popular-5-letter-words-list-words-that-start-with-double-letters"> Next »</a>
+                
+            </div>
+        </span>
+    </div>
+</div></div>
+                <div class="col-md-12">
+                    <section class="related-posts-section">
+                        <div class="container">
+                            <div class="relatedPosts">
+                                <h2 class="pt-5 pb-0 related_post_heading">You might also like</h2>
+                                <div class="row">
+                                    
+                                    <div class="col-lg-4 col-md-6 mb-4 card-group">
+    <div class="card h-100">
+        <a href="/blog/5-letter-words-tips-and-tricks-of-scoring-high-in-word-games">
+            <img src="/uploads/5-letter-words-tips-and-tricks-of-scoring-high-in-word-games.png" loading="lazy" class="card-img-top" height="auto" width="100%"
+                alt="5 Letter Words- Tips And Tricks Of Scoring High In Word Games">
+        </a>
+        <div class="card-body">
+            <a class="text-decoration-none text-dark" href="/blog/5-letter-words-tips-and-tricks-of-scoring-high-in-word-games" class="anchor_link">
+                <h4 class="card-title mb-4 text-left">5 Letter Words- Tips And Tricks Of Scoring High In Word Games</h4>
+            </a>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                    <img class="author-thumb" loading="lazy" src="/assets/images/siddhika.jpeg" alt="Siddhika Prajapati">
+                </span>
+                
+
+                <span class="author-meta">
+                    <span class="post-name">
+                        <a target="_blank" href="/blog">Siddhika Prajapati</a>
+                    </span><br>
+                    <span class="post-date">20 Mar 2022</span>
+                </span>
+                <span class="post-read-more"><a class="text-dark" href="/blog/5-letter-words-tips-and-tricks-of-scoring-high-in-word-games" title="Read Story">Read
+                        More</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+                                    
+                                    <div class="col-lg-4 col-md-6 mb-4 card-group">
+    <div class="card h-100">
+        <a href="/blog/how-to-become-a-pro-at-wordle-best-collection-of-tips-and-resources">
+            <img src="/uploads/output-2.png" loading="lazy" class="card-img-top" height="auto" width="100%"
+                alt="How to become a pro at wordle? Best collection of tips and resources!">
+        </a>
+        <div class="card-body">
+            <a class="text-decoration-none text-dark" href="/blog/how-to-become-a-pro-at-wordle-best-collection-of-tips-and-resources" class="anchor_link">
+                <h4 class="card-title mb-4 text-left">How to become a pro at wordle? Best collection of tips and resources!</h4>
+            </a>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                    <img class="author-thumb" loading="lazy" src="/assets/images/siddhika.jpeg" alt="Siddhika Prajapati">
+                </span>
+                
+
+                <span class="author-meta">
+                    <span class="post-name">
+                        <a target="_blank" href="/blog">Siddhika Prajapati</a>
+                    </span><br>
+                    <span class="post-date">21 Jan 2022</span>
+                </span>
+                <span class="post-read-more"><a class="text-dark" href="/blog/how-to-become-a-pro-at-wordle-best-collection-of-tips-and-resources" title="Read Story">Read
+                        More</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+                                    
+                                    <div class="col-lg-4 col-md-6 mb-4 card-group">
+    <div class="card h-100">
+        <a href="/blog/5-letter-words-with-no-repeating-letters">
+            <img src="/uploads/p1.png" loading="lazy" class="card-img-top" height="auto" width="100%"
+                alt="5 Letter Words with No Repeating Letters">
+        </a>
+        <div class="card-body">
+            <a class="text-decoration-none text-dark" href="/blog/5-letter-words-with-no-repeating-letters" class="anchor_link">
+                <h4 class="card-title mb-4 text-left">5 Letter Words with No Repeating Letters</h4>
+            </a>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                    <img class="author-thumb" loading="lazy" src="/assets/images/siddhika.jpeg" alt="Siddhika Prajapati">
+                </span>
+                
+
+                <span class="author-meta">
+                    <span class="post-name">
+                        <a target="_blank" href="/blog">Siddhika Prajapati</a>
+                    </span><br>
+                    <span class="post-date">02 Mar 2022</span>
+                </span>
+                <span class="post-read-more"><a class="text-dark" href="/blog/5-letter-words-with-no-repeating-letters" title="Read Story">Read
+                        More</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+                                    
+                                    <div class="col-lg-4 col-md-6 mb-4 card-group">
+    <div class="card h-100">
+        <a href="/blog/crack-wordle-easily-5-letter-words-to-use-first">
+            <img src="/uploads/crack-wordle-easily_-5-letter-words-to-use-first.png" loading="lazy" class="card-img-top" height="auto" width="100%"
+                alt="Crack Wordle Easily: 5-Letter Words To Use First">
+        </a>
+        <div class="card-body">
+            <a class="text-decoration-none text-dark" href="/blog/crack-wordle-easily-5-letter-words-to-use-first" class="anchor_link">
+                <h4 class="card-title mb-4 text-left">Crack Wordle Easily: 5-Letter Words To Use First</h4>
+            </a>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                    <img class="author-thumb" loading="lazy" src="/assets/images/siddhika.jpeg" alt="Siddhika Prajapati">
+                </span>
+                
+
+                <span class="author-meta">
+                    <span class="post-name">
+                        <a target="_blank" href="/blog">Siddhika Prajapati</a>
+                    </span><br>
+                    <span class="post-date">10 Mar 2022</span>
+                </span>
+                <span class="post-read-more"><a class="text-dark" href="/blog/crack-wordle-easily-5-letter-words-to-use-first" title="Read Story">Read
+                        More</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+                                    
+                                    <div class="col-lg-4 col-md-6 mb-4 card-group">
+    <div class="card h-100">
+        <a href="/blog/scrabble-players-handbook">
+            <img src="/uploads/scrabble-players-handbook.png" loading="lazy" class="card-img-top" height="auto" width="100%"
+                alt="Scrabble players handbook">
+        </a>
+        <div class="card-body">
+            <a class="text-decoration-none text-dark" href="/blog/scrabble-players-handbook" class="anchor_link">
+                <h4 class="card-title mb-4 text-left">Scrabble players handbook</h4>
+            </a>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                    <img class="author-thumb" loading="lazy" src="/assets/images/siddhika.jpeg" alt="Siddhika Prajapati">
+                </span>
+                
+
+                <span class="author-meta">
+                    <span class="post-name">
+                        <a target="_blank" href="/blog">Siddhika Prajapati</a>
+                    </span><br>
+                    <span class="post-date">08 Jan 2021</span>
+                </span>
+                <span class="post-read-more"><a class="text-dark" href="/blog/scrabble-players-handbook" title="Read Story">Read
+                        More</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+                                    
+                                    <div class="col-lg-4 col-md-6 mb-4 card-group">
+    <div class="card h-100">
+        <a href="/blog/how-to-win-word-games-the-most-popular-5-letter-words-used-in-word-games">
+            <img src="/uploads/how-to-win-word-games-the-most-popular-5-letter-words-used-in-word-games.png" loading="lazy" class="card-img-top" height="auto" width="100%"
+                alt="How To Win Word Games-The Most Popular 5 Letter Words Used In Word Games">
+        </a>
+        <div class="card-body">
+            <a class="text-decoration-none text-dark" href="/blog/how-to-win-word-games-the-most-popular-5-letter-words-used-in-word-games" class="anchor_link">
+                <h4 class="card-title mb-4 text-left">How To Win Word Games-The Most Popular 5 Letter Words Used In Word Games</h4>
+            </a>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                    <img class="author-thumb" loading="lazy" src="/assets/images/siddhika.jpeg" alt="Siddhika Prajapati">
+                </span>
+                
+
+                <span class="author-meta">
+                    <span class="post-name">
+                        <a target="_blank" href="/blog">Siddhika Prajapati</a>
+                    </span><br>
+                    <span class="post-date">01 Mar 2022</span>
+                </span>
+                <span class="post-read-more"><a class="text-dark" href="/blog/how-to-win-word-games-the-most-popular-5-letter-words-used-in-word-games" title="Read Story">Read
+                        More</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <link rel="stylesheet" href="/assets/css/adBlocker.css">
+<div id="detect"></div>
+<div class="wrapper text-center">
+    <div class="innerWrapper"><div class="closePopup p-1">
+            <i class="fas fa-times"></i>
+        </div><h2 class="brand-title">Words with letters</h2>
+        <p class="show-ads">
+            Please allow ads on our site
+        </p>
+        <p>Looks like you're using an ad blocker. We rely on advertising to help fund our site to keep it 100% free</p>
+        <div class="btn-container mx-auto">
+            <div class="bg-layer"></div>
+            <button class="allow-ads-btn">Allow ads</button>
+        </div>
+    </div>
+</div>
+<div class="extensions">
+    <section>
+        <div class="ads__content"><div class="closePopup">
+                <i class="fas fa-times"></i>
+            </div><p style="font-size: 18px">Which of these extensions do you have?</p>
+            <ul class="nav nav-tabs tablist" role="tablist">
+                <a class="nav-link nav-tab-link active" data-toggle="tab" href="#home" role="tab">
+                    <li class="nav-item">
+                        <img class="ads_img" loading="lazy" src="/assets/images/adblock.svg" alt="AdBlock image">
+                    </li>
+                    AdBlock
+                </a>
+                <a class="nav-link nav-tab-link" data-toggle="tab" href="#adsblockPlus" role="tab">
+                    <li class="nav-item">
+                        <img class="ads_img" loading="lazy" src="/assets/images/abp.svg" alt="Adblock Plus Image">
+                    </li>
+                    Adblock Plus
+                </a>
+                <a class="nav-link nav-tab-link" data-toggle="tab" href="#uBlock" role="tab">
+                    <li class="nav-item">
+                        <img class="ads_img" loading="lazy" src="/assets/images/uo.svg" alt="uBlock image">
+                    </li>
+                    uBlock Origin
+                </a>
+                <a class="nav-link nav-tab-link" data-toggle="tab" href="#other" role="tab">
+                    <li class="nav-item">
+                        <div class="three_dot">...</div>
+                    </li>
+                    Other
+                </a>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="home" role="tabpanel">
+                    <ol class="listContainer">
+                        <li class="listItem">Click the AdBlock icon
+                            <img width="18px" loading="lazy" src="/assets/images/adblock.svg" alt="AdBlock image">
+                            in the browser extension area on the upper right-hand corner. (You may see a small number
+                            covering
+                            part of
+                            the icon.)
+                        </li>
+                        <li class="listItem">Select <b>Don't run on pages on this site</b>.</li>
+                        <li class="listItem">In the "Don’t run AdBlock on..." dialog box, select <b>Exclude</b>. The
+                            AdBlock
+                            icon
+                            changes to a “thumbs up” image.</li>
+                    </ol>
+                    <div class="text-center w-100" onclick="refresh()">
+                        <button class="btn btn-primary" style="font-size: 12px;">Refresh page</button>
+                    </div>
+                </div>
+                <div class="tab-pane" id="adsblockPlus" role="tabpanel">
+                    <ol class="listContainer">
+                        <li class="listItem">Click the Adblock Plus icon
+                            <img width="18px" loading="lazy" src="/assets/images/abp.svg" alt="Adblock Plus Image">
+                            in the browser extension area on the
+                            upper right-hand corner. (You may see a small number covering part of the icon.)
+                        </li>
+                        <li class="listItem">Click the “power” button Power icon so that it slides left.</li>
+                        <li class="listItem">Click the <b>Refresh</b> button.</li>
+                    </ol>
+                    <div class="text-center w-100" onclick="refresh()">
+                        <button class="btn btn-primary" style="font-size: 12px;">Refresh page</button>
+                    </div>
+                </div>
+                <div class="tab-pane" id="uBlock" role="tabpanel">
+                    <ol class="listContainer">
+                        <li class="listItem">Click the uBlock Origin icon
+                            <img width="18px" loading="lazy" src="/assets/images/uo.svg" alt="uBlock image"> in the
+                            browser
+                            extension area on
+                            the upper right-hand corner. (You may see a small number covering part of the icon.)
+                        </li>
+                        <li class="listItem">
+                            Click the “power” button so that it slides left.
+                        </li>
+                        <li class="listItem">Click the <b>Refresh</b> button.</li>
+                    </ol>
+                    <div class="text-center w-100" onclick="refresh()">
+                        <button class="btn btn-primary" style="font-size: 12px;">Refresh page</button>
+                    </div>
+                </div>
+                <div class="tab-pane" id="other" role="tabpanel">
+                    <ol class="listContainer">
+                        <li class="listItem">Click the icon of the ad blocker extension installed on your browser.</li>
+                        <p class="text-muted">You’ll usually find this icon in the upper right-hand corner of your
+                            screen. You may
+                            have more than
+                            one ad blocker installed.</p>
+                        <li class="listItem">Follow the instructions for disabling the ad blocker on the site you’re
+                            viewing.</li>
+                        <p class="text-muted">You may have to select a menu option or click a button.</p>
+                        <li class="listItem">Refresh the page, either by following prompts or clicking your browser’s
+                            “refresh” or
+                            “reload” button.</li>
+                    </ol>
+                    <div class="text-center w-100" onclick="refresh()">
+                        <button class="btn btn-primary" style="font-size: 12px;">Refresh page</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script delay="/assets/js/adBlocker.js"></script><script defer="defer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script defer="defer" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+<script>WebFont.load({ google: { families: ['Source Sans Pro:200,300,400,500,600,700,800&display=swap'] } })</script>
+<link defer="defer" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+   integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+   crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</body>
+
+</html>

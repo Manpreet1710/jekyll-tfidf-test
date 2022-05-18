@@ -39,7 +39,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-tfidf-related-posts
-related_posts_count: 8
+related_posts_count: 6
 disqus:
   shortname: wordswithletters
 hero: product_fixed_image
